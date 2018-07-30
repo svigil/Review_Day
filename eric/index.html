@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Hangman</title>
+        <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    </head>
+    <body>
+        <h1>AKA Hangman</h1>
+        <br>
+        <h2 id="press-key">Press any key to get started!</h2>
+        <br>
+        <div class="counter">
+            <h3>Guesses remaining: <span id="guesses-left">6</span></h3>
+            <br>
+            <h3>Win count: <span id="win-count">0</span></h3>
+            <br>
+            <h3>Loss count: <span id="loss-count">0</span></h3>
+        </div>
+        <br>
+        <h2>Current word: 
+            <br>
+            <span id="current-word"></span>
+        </h2>
+        <br>
+        <h3>Letters guessed this game: </h3>
+        <h4 id="old-guesses"></h4>
+        <br>
+
+        
+        <script src="assets/javascript/game.js"></script>
+    </body>
+</html>
