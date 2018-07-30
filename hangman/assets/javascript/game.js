@@ -1,8 +1,8 @@
 
 
 //Create a Word Bank
-var wordBank = ["tantrum", "crayon", "pullups"];
-//Creat a Wins counter
+var wordBank = ["electron", "element", "reaction"];
+//Create a Wins counter
 var wins = 0;
 //Choose a current word to play the game
 var currentWord = wordBank[Math.floor(Math.random() * wordBank.length)];
