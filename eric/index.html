@@ -2,34 +2,41 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Hangman</title>
         <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     </head>
     <body>
-        <h1>AKA Hangman</h1>
-        <br>
-        <h2 id="press-key">Press any key to get started!</h2>
-        <br>
-        <div class="counter">
-            <h3>Guesses remaining: <span id="guesses-left">6</span></h3>
+        <div class="container">
+            <h1 class="row text-primary">Hangman</h1>
             <br>
-            <h3>Win count: <span id="win-count">0</span></h3>
+            <h2 id="press-key" class="row text-primary">Press any key to get started!</h2>
             <br>
-            <h3>Loss count: <span id="loss-count">0</span></h3>
+            <h2 class="row text-secondary">Current word: 
+                <br>
+                <span id="current-word" class="text-success"></span>
+            </h2>
+            <br>
+            <div class="counter row">
+                <h3 class="col-md-4 text-warning">Guesses remaining: <span id="guesses-left">6</span></h3>
+                <br>
+                <h3 class="col-md-4 text-success">Win count: <span id="win-count">0</span></h3>
+                <br>
+                <h3 class="col-md-4 text-danger">Loss count: <span id="loss-count">0</span></h3>
+            </div>
+            <br>
+            <div class="row">
+                <h3 class="col-md-4">Letters guessed this game: </h3>
+                <h4 id="old-guesses text-danger" class="col-md-8"></h4>
+            </div>
+            <br>
         </div>
-        <br>
-        <h2>Current word: 
-            <br>
-            <span id="current-word"></span>
-        </h2>
-        <br>
-        <h3>Letters guessed this game: </h3>
-        <h4 id="old-guesses"></h4>
-        <br>
 
-        
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
         <script src="assets/javascript/game.js"></script>
     </body>
 </html>
